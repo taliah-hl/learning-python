@@ -22,3 +22,12 @@ https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/
 ### get_user_info_gui.ipynb
 
 - Build a GUI by tkinter to get user info like username, password, then store in a dictionary
+
+### client_finder_GUI.ipynb
+
+- Creat a GUI using tkinter for user to lookup client's name by entering account number
+- Client info is stored in a .csv  (MOCK_client_info.csv)
+
+### Other files
+- mostly are just my learning notes.
+
