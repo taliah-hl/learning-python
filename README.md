@@ -28,6 +28,10 @@ https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/
 - Creat a GUI using tkinter for user to lookup client's name by entering account number
 - Client info is stored in a .csv  (MOCK_client_info.csv)
 
+### Calculate_Binomial_probability.ipynb
+
+- Create a simple program to solve binomial probability problems
+
 ### Other files
 - mostly are just my learning notes.
 
