@@ -4,8 +4,9 @@ import tkinter as tk
 listbox: https://shengyu7697.github.io/python-tkinter-listbox/
 allow width of listbox expand: https://www.tutorialspoint.com/how-to-fit-tkinter-listbox-to-contents
 layouting using frame.grid: https://stackoverflow.com/questions/42333377/how-to-set-fixed-frame-sizes-in-python-tkinter
-
 '''
+
+
 #balance= 1000
 
 class Record:
@@ -61,9 +62,9 @@ class Records:
     def add(self, item):
         self._records.append(item)
 
-    def delete(self, name):
-        for i in self.records:
-            if i.des == name:
+    def delete(self, num):
+        for i in self._records:
+            if i.item_num == num:
                 self._records.remove(i)
     @property
     def total_item(self):
@@ -122,9 +123,7 @@ def del_rec():
     todel  =sres_box.get(sres_box.curselection()[0])
     sres_box.delete(sres_box.curselection()[0])
     todel_num=int(todel[0]+todel[1])
-    for i in txn.records:
-        if todel_num == i.item_num:
-            txn.delete(i.des)
+    txn.delete(todel_num)
     update_balance()
 
 def save():
@@ -133,7 +132,7 @@ def save():
      
 
 win = tk.Tk()
-win.title('XYZ Brokerage Client search')
+win.title('Accounting')
 win.geometry('800x600')
 win.resizable(0,0)
 win.grid_columnconfigure(0, weight=1)
