@@ -1,6 +1,11 @@
 import tkinter as tk
-from turtle import width
 
+'''reference: 
+listbox: https://shengyu7697.github.io/python-tkinter-listbox/
+allow width of listbox expand: https://www.tutorialspoint.com/how-to-fit-tkinter-listbox-to-contents
+layouting using frame.grid: https://stackoverflow.com/questions/42333377/how-to-set-fixed-frame-sizes-in-python-tkinter
+
+'''
 #balance= 1000
 
 class Record:
